@@ -144,8 +144,8 @@ class AdminConfig {
   }
 }
 class PriceUtils {
-  static String formatPrice(double price, {String currency = '$'}) {
-    return '$currency${price.toStringAsFixed(2)}';
+  static String formatPrice(double price, {String currency = '\$'}) {
+    return '\$currency\${price.toStringAsFixed(2)}';
   }
   static double parsePrice(String priceString) {
     if (priceString.isEmpty) return 0.0;
@@ -154,7 +154,7 @@ class PriceUtils {
   }
   static String detectCurrency(String priceString) {
     if (priceString.contains('₹')) return '₹';
-    if (priceString.contains('$')) return '$';
+    if (priceString.contains('\$')) return '\$';
     if (priceString.contains('€')) return '€';
     if (priceString.contains('£')) return '£';
     if (priceString.contains('¥')) return '¥';
@@ -162,8 +162,8 @@ class PriceUtils {
     if (priceString.contains('₽')) return '₽';
     if (priceString.contains('₦')) return '₦';
     if (priceString.contains('₨')) return '₨';
-    return '$'; // Default to dollar
-  }
+    return '\$'; // Default to dollar
+  }  
   static double calculateDiscountPrice(double originalPrice, double discountPercentage) {
     return originalPrice * (1 - discountPercentage / 100);
   }
@@ -366,7 +366,7 @@ class _HomePageState extends State<HomePage> {
                         const Icon(Icons.store, size: 32, color: Colors.white),
                         const SizedBox(width: 8),
                         Text(
-                          'Kadai',
+                          'Kadaikal',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -462,7 +462,7 @@ class _HomePageState extends State<HomePage> {
                                         width: 60,
                                         height: 60,
                                         decoration: BoxDecoration(
-                                          color: Colors.white,
+                                          color: Color(0x0d5b98),
                                           borderRadius: BorderRadius.circular(8),
                                           boxShadow: [
                                             BoxShadow(
@@ -480,7 +480,7 @@ class _HomePageState extends State<HomePage> {
                                         style: const TextStyle(fontSize: 10),
                                         textAlign: TextAlign.center,
                                       ),
-                                      if (false true)
+                                      if (false)
                                         Column(
                                           children: [],
                                         ),
@@ -542,7 +542,7 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
                           decoration: InputDecoration(
-                            hintText: 'hello',
+                            hintText: 'bello',
                             prefixIcon: const Icon(Icons.search),
                             suffixIcon: const Icon(Icons.filter_list),
                             border: OutlineInputBorder(
@@ -559,7 +559,7 @@ class _HomePageState extends State<HomePage> {
                             const SizedBox(width: 4),
                             Expanded(
                               child: Text(
-                                'Search by product name or price (e.g., "Product Name" or "$299")',
+                                'Search by product name or price (e.g., "Product Name" or "\$299")',
                                 style: TextStyle(fontSize: 12, color: Colors.grey[600]),
                               ),
                             ),
