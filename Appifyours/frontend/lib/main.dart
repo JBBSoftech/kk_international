@@ -273,28 +273,47 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
-  Widget build(BuildContext context) => MaterialApp(
-    title: 'Generated E-commerce App',
-    theme: ThemeData(
-      primarySwatch: Colors.blue,
-      useMaterial3: true,
-      brightness: Brightness.light,
-      appBarTheme: const AppBarTheme(
-          elevation: 4, shadowColor: Colors.black38, color: Colors.blue, foregroundColor: Colors.white),
-      cardTheme: CardThemeData(
-          elevation: 3, shadowColor: Colors.black12,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-      elevatedButtonTheme: ElevatedButtonThemeData(
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Generated E-commerce App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+        brightness: Brightness.light,
+        appBarTheme: const AppBarTheme(
+          elevation: 4,
+          shadowColor: Colors.black38,
+          color: Colors.blue,
+          foregroundColor: Colors.white,
+        ),
+        cardTheme: CardTheme(
+          elevation: 3,
+          shadowColor: Colors.black12,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
-      inputDecorationTheme: InputDecorationTheme(
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
-        filled: true, fillColor: Colors.grey.shade50,
-        contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 16))),
-    home: const HomePage(),
-    debugShowCheckedModeBanner: false,
-  );
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+          filled: true,
+          fillColor: Colors.grey.shade50,
+          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        ),
+      ),
+      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -366,7 +385,7 @@ class _HomePageState extends State<HomePage> {
                         const Icon(Icons.store, size: 32, color: Colors.white),
                         const SizedBox(width: 8),
                         Text(
-                          'Kadaika',
+                          'Kadai',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -442,7 +461,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'h',
+                          'hello',
                           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 12),
@@ -542,7 +561,7 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
                           decoration: InputDecoration(
-                            hintText: 'bello',
+                            hintText: 'kello',
                             prefixIcon: const Icon(Icons.search),
                             suffixIcon: const Icon(Icons.filter_list),
                             border: OutlineInputBorder(
