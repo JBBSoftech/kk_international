@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
-import 'package:carousel_slider/carousel_controller.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 class AdminConfig {
@@ -386,7 +385,7 @@ class _HomePageState extends State<HomePage> {
                         const Icon(Icons.store, size: 32, color: Colors.white),
                         const SizedBox(width: 8),
                         Text(
-                          'Kadai6',
+                          'Kadai7',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -462,7 +461,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'hellewee2',
+                          'hellewee3',
                           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 12),
@@ -562,7 +561,7 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
                           decoration: InputDecoration(
-                            hintText: 'searching6',
+                            hintText: 'searching7',
                             prefixIcon: const Icon(Icons.search),
                             suffixIcon: const Icon(Icons.filter_list),
                             border: OutlineInputBorder(
