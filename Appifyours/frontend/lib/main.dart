@@ -385,7 +385,7 @@ class _HomePageState extends State<HomePage> {
                         const Icon(Icons.store, size: 32, color: Colors.white),
                         const SizedBox(width: 8),
                         Text(
-                          'Kadai8',
+                          'Kadai9',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -461,7 +461,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'hellewee4',
+                          'hellewee5',
                           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 12),
