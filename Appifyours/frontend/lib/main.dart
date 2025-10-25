@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:image_picker/image_picker.dart';
-import 'dart:io';
+import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
+import 'package:carousel_slider/carousel_controller.dart';
 import 'dart:convert';
-import 'dart:typed_data';
-import 'package:flutter/services.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:carousel_slider/carousel_slider.dart' as carousel;
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:frontend/config/environment.dart';
-import 'dart:async';
-import 'package:device_frame/device_frame.dart';
 class AdminConfig {
   static const String adminId = '68e4ef2ea351ff88d381cb19';
   static const String shopName = 'KK International';
@@ -395,7 +386,7 @@ class _HomePageState extends State<HomePage> {
                         const Icon(Icons.store, size: 32, color: Colors.white),
                         const SizedBox(width: 8),
                         Text(
-                          'Kadai5',
+                          'Kadai6',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -471,7 +462,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'hellewee1',
+                          'hellewee2',
                           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 12),
@@ -571,7 +562,7 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
                           decoration: InputDecoration(
-                            hintText: 'searching5',
+                            hintText: 'searching6',
                             prefixIcon: const Icon(Icons.search),
                             suffixIcon: const Icon(Icons.filter_list),
                             border: OutlineInputBorder(
