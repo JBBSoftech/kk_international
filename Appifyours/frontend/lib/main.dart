@@ -385,7 +385,7 @@ class _HomePageState extends State<HomePage> {
                         const Icon(Icons.store, size: 32, color: Colors.white),
                         const SizedBox(width: 8),
                         Text(
-                          'Kadai3',
+                          'Kadai4',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -461,7 +461,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'hell',
+                          'helle',
                           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 12),
@@ -561,7 +561,7 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
                           decoration: InputDecoration(
-                            hintText: 'search',
+                            hintText: 'searching',
                             prefixIcon: const Icon(Icons.search),
                             suffixIcon: const Icon(Icons.filter_list),
                             border: OutlineInputBorder(
